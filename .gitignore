@@ -1,0 +1,9 @@
+*.png
+*.mp4
+*.jpg
+*.jpeg
+*.aux
+*.log
+*.tex
+result/
+Samples/

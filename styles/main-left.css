@@ -1,0 +1,63 @@
+new{
+position:relative;
+width:100%;
+background:rgba(0,0,0,0);
+display:none;
+transition:1s all;
+}
+new button{
+width:80%;
+height:50pt;
+}
+newproject{
+position:relative;
+width:100%;
+background:rgba(0,0,0,0);
+/*display:none;*/
+transition:1s all;
+}
+newproject button{
+border:none;
+border-bottom:thin solid white;
+width:40%;
+height:30pt;
+}
+newproject button:hover{background:rgba(20,130,121,0.7);}
+newproject input[type="text"]{width:90%;}
+newproject textarea{
+height:60%;
+width:90%;
+resize:none;
+}
+#project_description{
+min-height:120pt;
+}
+newclass{
+position:relative;
+width:100%;
+background:rgba(0,0,0,0);
+/*display:none;*/
+transition:1s all;
+}
+newclass button{height:30pt;width:40%;}
+open{
+position:relative;
+padding-top:5%;
+width:20vw;
+background:rgba(0,0,0,0);
+transition:1s all;
+}
+open button{
+width:100%;
+height:30pt;
+}
+folder{
+position:relative;
+padding:0;
+margin:0;
+min-width:20vw;
+background:rgba(0,0,0,0);
+display:block;
+transition:1s all;
+}
+folder:hover{background:rgba(20,130,121,0.7);}

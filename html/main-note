@@ -1,0 +1,24 @@
+The primary purpose of the program is as a compiler. Everything else comes after that.
+Based on priority, the actions are as follows:
+1 Save and Compile current
+2 Save only
+3 Chat data transmit only
+4 Chat data save and transmit
+5 Problem statement transmit previous
+6 problem statement transmit next
+7 Fetch files list
+8 Fetch file filename
+9 Background change
+
+The code shall be marked based on grouping.
+1__ will be for any and all comms from the mainpage
+100 will be for save
+101 will be for project creation
+102 will be for compile
+110 will be for problem statement previous
+111 will be for problem statement next
+120 will be for chat data recieve only
+121 will be for chat data send and recieve
+130 will be for fetching files list, in a structured manner
+131 will be for fetching a single file to be opened in editor, check for media
+132 will be for fetching background

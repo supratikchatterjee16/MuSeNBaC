@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Musenbac-Entry</title>
+<link rel="stylesheet" href="entry.css">
+<link rel="shortcut icon" href="logo.svg">
+<script>
+var field=[["id","pswd"],["name","ph_num","reg_num","new_pswd"]];
+var element=["new","newform","reject"];
+function submit(ctr){
+    var str="0"+ctr.toString();
+    for(var i=0;i<field[ctr].length;i++){
+        if(document.getElementById(field[ctr][i]).value.length>0)
+        str+="data"+i.toString()+"="+encodeURIComponent(document.getElementById(field[ctr][i]).value)+"&";
+        else {
+            alert("Please fill all fields");
+            return null;
+        }
+    }
+    send(str.substring(0,str.length-1));
+    if(ctr==1){toggle(0);toggle(2);}
+}
+function send(str){
+    var xhr=new XMLHttpRequest();
+    xhr.open('POST',"/", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(str+"\r\n\r\n");
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            var res=xhr.responseText;
+            check(res);
+        }
+    }
+}
+function toggle(num){
+var dom=document.getElementById(element[num]);
+if(dom.style.display=="none")dom.style.display="block";
+else dom.style.display="none";
+}
+function check(response){
+    document.getElementById("pswd").value="";
+    switch(parseInt(response)){
+        //case 0:{toggle(0);toggle(2);};break;
+        case 1:{toggle(0);toggle(1);};break;
+        case 10:{alert("Incorrect password. Re-enter.");};break;
+        case 11:window.open('/', 'newFullScreenWindow', 'fullscreen=yes, channelmode=yes,scrollbars=yes');break;
+    }
+}
+function trigger(e){
+    var code=e.keyCode || e.which;
+    console.log("trigger check");
+    if(code==13){console.log("trigger success");submit(0);}
+}
+</script>
+</head>
+<body>
+<overlay>
+<fieldset style="width:40vw;">
+<legend>Student Details</legend>
+<center>
+<br><br>
+<input id="id" type="text" placeholder="Registration ID" autocomplete="off"/><br>
+<input id="pswd" type="password" placeholder="Password" value="" onkeydown="trigger(event)"/><br><br>
+<button id="submit" onclick="submit(0)">Submit</button>
+</center>
+</fieldset>
+</overlay>
+<new id="new">
+<newform id="newform">
+<center>
+<h1><u>Welcome</u></h1>
+Your ID is not registered. Please enter the following details.<br><br>
+<table>
+<tr>
+<td>Name : </td><td><input id="name" type="text" placeholder="John Doe" autocomplete="off"/></td>
+</tr>
+<tr>
+<td>Phone number : </td><td><input id="ph_num" type="text" placeholder="xxxxxxxxxxxx" autocomplete="off"/></td>
+</tr>
+<tr>
+<td>Registration Number: </td><td><input id="reg_num" type="text" placeholder="xxxxxxxxxxxx" autocomplete="off"/></td>
+</tr>
+<tr>
+<td>Password : </td><td><input id="new_pswd" type="text" placeholder="xxxxxxxxxxxx" autocomplete="off"/></td>
+</tr>
+</table>
+<button onclick="submit(1)">Submit</button>
+</center>
+</newform>
+<reject id="reject">
+<center>You are not authorised to create a new account.</center>
+</reject>
+</new>
+</body>
+</html>

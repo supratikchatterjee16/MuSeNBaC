@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html style="background:black;">
+<head>
+<meta charset="UTF-8">
+<title>Musenbac</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main-left.css">
+<link rel="stylesheet" href="main-right.css">
+<link rel="shortcut icon" href="logo.svg">
+<script src="main.js"></script>
+<script id="test script">
+function simulateKeyPress(character) {
+  jQuery.event.trigger({ type : 'keypress', which : character.charCodeAt(0) });
+}
+function checkKeys(e){
+    var keyCode=e.keyCode || e.which;
+    if(keyCode==9){
+        e.preventDefault();
+        simulateKeyPress(" ");
+    }
+    if(e.ctrlKey){
+    e.preventDefault();}
+}
+</script>
+</head>
+<body onload="init()" oncontextmenu="return false">
+<app id="app">
+<header>
+<ti onclick="location.reload(true);"><h1><t1>M</t1><t1>u</t1><t1>s</t1><t1>e</t1><t1>n</t1><t1>b</t1><t1>a</t1><t1>c</t1></h1></ti>
+<menu><button onclick="left(0)">New</button><button onclick="listFiles('')">Files</button><button onclick="backChange()">Background</button><button>Settings</button><button onclick="signOut()">Sign Out</button></menu>
+</header>
+<footer>
+<leftpane>
+<welcome id="welcome" style="padding-top:25vh;">
+<center style="padding-top:20vh;"><h3>Welcome to Musenbac</h3><br>This is a web based IDE to be deployed on a LAN network. To start a new Project click on <hl2>'New'</hl2> and then <hl2>'Project'</hl2> or work on a pre-existent document by clicking on <hl2>'Files'</hl2>. Edit your code here in the text space in the middle.For any help, refer to the Musenbac Wiki.</center>
+</welcome>
+<center>
+<new id="new" style="display:none;"><br><br><br>
+    <h3>Create new:</h3>
+    <button onclick="left(1)">Project</button><br>
+    <!--button onclick="left(2)">Object</button><br-->
+    <button onclick="createFile()">File</button><br>
+    <!--button style="border:none">Resource</button><br-->
+</new>
+<newproject id="newproject" style="display:none;"><br><br>
+    <h3>Project Details</h3>
+    <input type="text" id="project_name" placeholder="Project Name"><br><br>
+    <textarea id="project_description" placeholder="Give a short description about what this project is about"></textarea><br><br>
+    <div id="language-selector" onclick="option()" ><button>Language to be used</button></div><br><br>
+    <button onclick="newproject()">Ok</button> <button onclick="left(0)">Cancel</button>
+</newproject>
+<newclass id="newclass" style="display:none;">
+    <h3>File Details</h3>
+    <input id="class_name" type="text" placeholder="New filename"><br><br>
+    <input id="extension" type="text" placeholder="Extension"><br><br>
+    <button onclick="newfile">Create</button> <button onclick="reveal(0)">Cancel</button>
+</newclass>
+<open id="open" style="display:none;">
+    <h3>Open File</h3>
+    <button>Sample Folder <arrow/></button>
+</open>
+</center>
+</leftpane>
+<middlepane>
+<classes id="classes" style="visibility:visible;"><button>Untitled</button></classes>
+<code>
+<div id="highlightArea"></div>
+<div id="codespace" spellcheck="false" autocorrect="off" autocomplete="on" autocapitalize="off" contenteditable="true" oncontextmenu="return false" onkeydown="checkKeys(event)"></div>
+</code>
+</middlepane>
+<rightpane>
+<media>
+    <button onclick="right(0)">Chat</button><button onclick="right(1)">Problem</button><button onclick="right(2)">Compiler</button>
+    </media>
+<chat id="chat"><div id="messages" style="height:100%;">
+    <!--div id="message"><n>Shubham</n>Hello </div-->
+    <center style="padding-top:30vh;">While the chat is a feature of this program, this is by default, deactivated to reduce distractions. However, feel free to activate it. By pressing the following 'Activate' button.<br><button onclick="activateChat()" style="position:relative;left:0;bottom:0;height:30pt;width:100%;">Activate</button></center>
+    </div>
+    <input type="text" id="sendmessage" placeholder="Ask or Answer" style="background:rgba(0,0,0,0.7);" onkeydown="triggerChat(event)"></input>
+</chat>
+<prob id="problem" style="display:none;">
+    <div id="statement" style="padding:2pt;">Create a Hello World Program in Java.</div>
+    <navbuttons><button onclick="prevproblem()">Previous</button><button onclick="nextproblem()">Next</button></navbuttons>
+    </prob>
+<comp id="compiler" style="display:none;">
+<button onclick="compile();" style="position:absolute;bottom:0;width:100%;height:30pt;background:rgba(0,0,0,0.7);">Compile</button>
+</comp>
+</rightpane>
+</footer>
+</app>
+<about id="about" style="position:fixed;top:5%;left:0%;width:1299px;height:766px;background:rgba(1','1','1','.7);z-index:9999;display:none;">This was developed as a network based compiler for lab environments originally. This may',' however be used as is needed.The author of this project is Supratik Chatterjee',' who started this project while in his second year of college.</about>
+</body> 
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="40">
+<style xmlns="" type="text/css" id="night-mode-pro-style"/>
+<link xmlns="" type="text/css" rel="stylesheet" id="night-mode-pro-link"/>  
+ <style> 
+    rect{
+    stroke-width:0.1;
+    }
+  </style> 
+<rect id="rect1" x="0" y="0" width="10" height="10" fill="rgba(0,0,0,0.5)"/>
+<rect id="rect1" x="10" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="0" y="10" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="10" y="10" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="20" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="30" y="0" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="20" y="10" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="30" y="10" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+
+<rect id="rect1" x="0" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="10" y="20" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="0" y="30" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="10" y="30" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="20" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="30" y="20" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="20" y="30" width="10" height="10" fill="rgba(0,0,0,0.5)"/>
+<rect id="rect1" x="30" y="30" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+
+<rect id="rect1" x="40" y="0" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="50" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="40" y="10" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="50" y="10" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="60" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="70" y="0" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="60" y="10" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="70" y="10" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+
+<rect id="rect1" x="40" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="50" y="20" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="40" y="30" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="50" y="30" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="60" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="70" y="20" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="60" y="30" width="10" height="10" fill="rgba(0,0,0,0.5)"/>
+<rect id="rect1" x="70" y="30" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+
+<rect id="rect1" x="80" y="0" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="90" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="80" y="10" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="90" y="10" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="100" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="110" y="0" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="100" y="10" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="110" y="10" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+
+<rect id="rect1" x="80" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="90" y="20" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="80" y="30" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="90" y="30" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="100" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="110" y="20" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="100" y="30" width="10" height="10" fill="rgba(0,0,0,0.5)"/>
+<rect id="rect1" x="110" y="30" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+
+<rect id="rect1" x="120" y="0" width="10" height="10" fill="rgba(0,0,0,0)"/>
+<rect id="rect1" x="130" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="120" y="10" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="130" y="10" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="140" y="0" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="150" y="0" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="140" y="10" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="150" y="10" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+
+<rect id="rect1" x="120" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="130" y="20" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+<rect id="rect1" x="120" y="30" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="130" y="30" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+
+<rect id="rect1" x="140" y="20" width="10" height="10" fill="rgba(0,0,0,0.2)"/>
+<rect id="rect1" x="150" y="20" width="10" height="10" fill="rgba(0,0,0,0.3)"/>
+<rect id="rect1" x="140" y="30" width="10" height="10" fill="rgba(0,0,0,0.4)"/>
+<rect id="rect1" x="150" y="30" width="10" height="10" fill="rgba(0,0,0,0.1)"/>
+</svg>
