@@ -5,5 +5,5 @@
 *.aux
 *.log
 *.tex
-result/
-Samples/
+pswd/
+accounts/

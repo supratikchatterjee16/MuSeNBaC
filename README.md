@@ -4,7 +4,7 @@ Server based Compilation tool to provide a browser based code development enviro
 This uses a basic server client model of operation. To use this simply:
 1. Download files onto your computer
 2. Compile every .java file into a class files, as I do not upload the class files
-3. If you have the 'com' folder available in the directory, you are in the correct directory.
+3. If you have the 'musenbac' folder available in the directory, you are in the correct directory.
 4. If not, navigate inside or outside till you have the com folder in the current listed directory
 5. Open console/terminal, cd to aforementioned directory
 6. java com.musenbac
